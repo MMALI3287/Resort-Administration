@@ -8,13 +8,13 @@ import javax.swing.*;
  *
  * @author USER
  */
-public class Welcome extends javax.swing.JFrame {
+public class AdminLogin extends javax.swing.JFrame {
 
     ImageIcon imageBG=new ImageIcon("imagebg.png");
     /**
      * Creates new form Welcome
      */
-    public Welcome() {
+    public AdminLogin() {
         initComponents();
         BG.setIcon(imageBG);
     }
@@ -37,7 +37,6 @@ public class Welcome extends javax.swing.JFrame {
         setBackground(new java.awt.Color(153, 153, 153));
         setBounds(new java.awt.Rectangle(0, 0, 0, 0));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setPreferredSize(new java.awt.Dimension(1510, 850));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
