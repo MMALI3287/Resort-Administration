@@ -129,8 +129,8 @@ public class ConfirmedCottage extends javax.swing.JFrame {
         kGradientPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 360, 50));
 
         jLabel19.setFont(new java.awt.Font("Bodoni MT", 1, 69)); // NOI18N
-        jLabel19.setText("CONFIRM YOUR COTTAGE");
-        kGradientPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, 830, 100));
+        jLabel19.setText("CONFIRMED COTTAGE");
+        kGradientPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 30, 720, 100));
 
         jLabel10.setFont(new java.awt.Font("Bodoni MT", 1, 36)); // NOI18N
         jLabel10.setText("TWIN BEDS");

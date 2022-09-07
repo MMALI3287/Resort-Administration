@@ -239,8 +239,7 @@ public class JDBC {
             resultSet=preparedStatement.executeQuery();
             while(resultSet.next()){
                 prev=resultSet.getTimestamp("time");
-            }
-            Date t=null;
+                Date t=null;
             t=new Date(prev.getTime());
             String pattern="dd MM";
             SimpleDateFormat sdf=new SimpleDateFormat(pattern);
@@ -265,6 +264,8 @@ public class JDBC {
             else if(mi1<mi2){
                 BookCottage.diff=di1-di2+30;
             }
+            }
+            
         } catch (SQLException ex) {
             Logger.getLogger(JDBC.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -280,8 +281,7 @@ public class JDBC {
             resultSet=preparedStatement.executeQuery();
             while(resultSet.next()){
                 prev=resultSet.getTimestamp("time");
-            }
-            Date t=null;
+                Date t=null;
             t=new Date(prev.getTime());
             String pattern="dd MM";
             SimpleDateFormat sdf=new SimpleDateFormat(pattern);
@@ -310,6 +310,58 @@ public class JDBC {
             }
             else if(mi1<mi2){
                 BookVenue.diff=di1-di2+30;
+            }
+            }
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(JDBC.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    public void checkOut(String review,int price){
+        
+            Timestamp sqldate = new Timestamp(System.currentTimeMillis());
+            try {
+                preparedStatement = connection.prepareStatement(
+                        "INSERT INTO checkouts (username,review, spent ,time) VALUES (?,?,?,?);");
+                preparedStatement.setString(1, Welcome.user);
+                preparedStatement.setString(2, review);
+                preparedStatement.setInt(3, price);
+                preparedStatement.setTimestamp(4, sqldate);
+                rowsAffected = preparedStatement.executeUpdate();
+            } catch (SQLException ex) {
+                Logger.getLogger(JDBC.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            try {
+            preparedStatement = connection.prepareStatement(
+                    "SELECT username FROM book_cot WHERE username=?;");
+            preparedStatement.setString(1, Welcome.user);
+            resultSet=preparedStatement.executeQuery();
+            while(resultSet.next()){
+                preparedStatement = connection.prepareStatement(
+                    "DELETE FROM book_cot WHERE username=?;");
+            preparedStatement.setString(1, Welcome.user);
+            rowsAffected=preparedStatement.executeUpdate();
+            }
+            preparedStatement = connection.prepareStatement(
+                    "SELECT username FROM book_venue WHERE username=?;");
+            preparedStatement.setString(1, Welcome.user);
+            resultSet=preparedStatement.executeQuery();
+            while(resultSet.next()){
+                preparedStatement = connection.prepareStatement(
+                    "DELETE FROM book_venue WHERE username=?;");
+            preparedStatement.setString(1, Welcome.user);
+            rowsAffected=preparedStatement.executeUpdate();
+            }
+            preparedStatement = connection.prepareStatement(
+                    "SELECT username FROM tour WHERE username=?;");
+            preparedStatement.setString(1, Welcome.user);
+            resultSet=preparedStatement.executeQuery();
+            while(resultSet.next()){
+                preparedStatement = connection.prepareStatement(
+                    "DELETE FROM tour WHERE username=?;");
+            preparedStatement.setString(1, Welcome.user);
+            rowsAffected=preparedStatement.executeUpdate();
             }
         } catch (SQLException ex) {
             Logger.getLogger(JDBC.class.getName()).log(Level.SEVERE, null, ex);

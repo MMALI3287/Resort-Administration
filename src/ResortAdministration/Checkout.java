@@ -4,9 +4,6 @@
  * and open the template in the editor.
  */
 package ResortAdministration;
-
-
-
 /**
  *
  * @author USER
@@ -16,6 +13,7 @@ public class Checkout extends javax.swing.JFrame {
     /**
      * Creates new form Checkout
      */
+    int price=0;
     public Checkout() {
         initComponents();
         initialize();
@@ -24,46 +22,62 @@ public class Checkout extends javax.swing.JFrame {
     public void initialize(){
         Welcome.jdbc.checkOut_cot();
         Welcome.jdbc.checkOut_res();
+        System.out.println("Cottage diff "+BookCottage.diff);
+        
+        System.out.println("Resort diff "+BookVenue.diff);
         tc.setText(SelectVehicle.price+"");
+        int ccp=0;
+        int vcp=0;
         switch (Welcome.cot) {
             case "twinBeds":
-                cc.setText(12000*BookCottage.diff+"");
+                ccp=12000*BookCottage.diff;
+                cc.setText(12000*(BookCottage.diff+1)+" BDT");
                 break;
             case "doubleBeds":
-                cc.setText(14000*BookCottage.diff+"");
+                ccp=14000*BookCottage.diff;
+                cc.setText(14000*(BookCottage.diff+1)+" BDT");
                 break;
             case "luxuryVilla":
-                cc.setText(16000*BookCottage.diff+"");
+                ccp=16000*BookCottage.diff;
+                cc.setText(16000*(BookCottage.diff+1)+" BDT");
                 break;
             case "primeVilla":
-                cc.setText(18000*BookCottage.diff+"");
+                ccp=18000*BookCottage.diff;
+                cc.setText(18000*(BookCottage.diff+1)+" BDT");
                 break;
             case "vipBed":
-                cc.setText(22000*BookCottage.diff+"");
+                ccp=22000*BookCottage.diff;
+                cc.setText(22000*(BookCottage.diff+1)+" BDT");
                 break;
             default:
                 break; 
         }
         switch (Welcome.res) {
             case "poolCottage":
-                vc.setText(26000*BookVenue.diff+"");
+                vcp=26000*BookVenue.diff;
+                vc.setText(26000*(BookVenue.diff+1)+" BDT");
                 break;
             case "mountainCottage":
-                vc.setText(28000*BookVenue.diff+"");
+                vcp=26000*BookVenue.diff;
+                vc.setText(28000*(BookVenue.diff+1)+" BDT");
                 break;
             case "lakeCottage":
-                vc.setText(35000*BookVenue.diff+"");
+                vcp=26000*BookVenue.diff;
+                vc.setText(35000*(BookVenue.diff+1)+" BDT");
                 break;
             case "halfCottage":
-                vc.setText(40000*BookVenue.diff+"");
+                vcp=26000*BookVenue.diff;
+                vc.setText(40000*(BookVenue.diff+1)+" BDT");
                 break;
             case "fullCottage":
-                vc.setText(80000*BookVenue.diff+"");
+                vcp=26000*BookVenue.diff;
+                vc.setText(80000*(BookVenue.diff+1)+" BDT");
                 break;
             default:
                 break;
         }
-        total.setText(Integer.parseInt(vc.getText())+Integer.parseInt(cc.getText())+SelectVehicle.price+"");
+        price=vcp+ccp+SelectVehicle.price;
+        total.setText(price+" BDT");
     }
 
 
@@ -89,6 +103,9 @@ public class Checkout extends javax.swing.JFrame {
         tc = new javax.swing.JLabel();
         total = new javax.swing.JLabel();
         vc = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jLabel13 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -136,12 +153,12 @@ public class Checkout extends javax.swing.JFrame {
         });
         kGradientPanel1.add(kButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 620, 290, 90));
 
-        jLabel9.setFont(new java.awt.Font("Bodoni MT", 1, 48)); // NOI18N
-        jLabel9.setText("CHECK-OUT");
-        kGradientPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 20, -1, 70));
+        jLabel9.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
+        jLabel9.setText("LEAVE A REVIEW:");
+        kGradientPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 210, -1, 70));
 
         cc.setFont(new java.awt.Font("Bodoni MT", 1, 30)); // NOI18N
-        cc.setText("TOTAL COST AMOUNT             :");
+        cc.setText("0 BDT");
         kGradientPanel1.add(cc, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 300, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Bodoni MT", 1, 30)); // NOI18N
@@ -161,16 +178,26 @@ public class Checkout extends javax.swing.JFrame {
         kGradientPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 440, -1, -1));
 
         tc.setFont(new java.awt.Font("Bodoni MT", 1, 30)); // NOI18N
-        tc.setText("TOTAL COST AMOUNT             :");
-        kGradientPanel1.add(tc, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 370, -1, -1));
+        tc.setText("0 BDT");
+        kGradientPanel1.add(tc, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 370, 280, -1));
 
         total.setFont(new java.awt.Font("Bodoni MT", 1, 30)); // NOI18N
-        total.setText("TOTAL COST AMOUNT             :");
-        kGradientPanel1.add(total, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 440, -1, -1));
+        total.setText("0 BDT");
+        kGradientPanel1.add(total, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 440, 290, -1));
 
         vc.setFont(new java.awt.Font("Bodoni MT", 1, 30)); // NOI18N
-        vc.setText("TOTAL COST AMOUNT             :");
+        vc.setText("0 BDT");
         kGradientPanel1.add(vc, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 230, -1, -1));
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        kGradientPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 280, 440, 190));
+
+        jLabel13.setFont(new java.awt.Font("Bodoni MT", 1, 48)); // NOI18N
+        jLabel13.setText("CHECK-OUT");
+        kGradientPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 20, -1, 70));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -195,7 +222,10 @@ public class Checkout extends javax.swing.JFrame {
 
     private void kButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton3ActionPerformed
         // TODO add your handling code here:
-        
+        Welcome.jdbc.checkOut(jTextArea1.getText()+"", price);
+        Welcome welcome=new Welcome();
+        welcome.show();
+        dispose();
     }//GEN-LAST:event_kButton3ActionPerformed
 
     /**
@@ -238,8 +268,11 @@ public class Checkout extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     private com.k33ptoo.components.KButton kButton2;
     private com.k33ptoo.components.KButton kButton3;
     private keeptoo.KGradientPanel kGradientPanel1;

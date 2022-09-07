@@ -186,7 +186,7 @@ public class Forest extends javax.swing.JFrame {
         }
         position = position + 1;
         if (position >= imgs.length) {
-            position = imgs.length - 1;
+            position = 0;
         }
         show(position);
     }//GEN-LAST:event_jLabel1MousePressed
@@ -206,7 +206,7 @@ public class Forest extends javax.swing.JFrame {
         }
         position = position - +1;
         if (position < 0) {
-            position = 0;
+            position = imgs.length - 1;
         }
         show(position);
     }//GEN-LAST:event_jLabel2MousePressed

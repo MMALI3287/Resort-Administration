@@ -20,13 +20,32 @@ public class ConfirmedTour extends javax.swing.JFrame {
     }
 
     public void showTaka() {
-        c.setText("" + SelectVehicle.car);
-        su.setText("" + SelectVehicle.suv);
-        b.setText("" + SelectVehicle.bus);
-        speed.setText("" + SelectVehicle.sb);
-        yat.setText("" + SelectVehicle.yt);
+        c.setText("CARS: " + SelectVehicle.car);
+        su.setText("SUVs: " + SelectVehicle.suv);
+        b.setText("BUSES: " + SelectVehicle.bus);
+        speed.setText("SPEED BOATS: " + SelectVehicle.sb);
+        yat.setText("YACHTES: " + SelectVehicle.yt);
         tot.setText(SelectVehicle.price + " BDT");
-        tot1.setText(Welcome.des);
+        switch (Welcome.des) {
+            case "forest":
+                tot1.setText("FOREST PACKAGE: "+Welcome.loc);
+                break;
+            case "beach":
+                tot1.setText("BEACH PACKAGE: "+Welcome.loc);
+                break;
+            case "town":
+                tot1.setText("TOWN PACKAGE: "+Welcome.loc);
+                break;
+            case "island":
+                tot1.setText("ISLAND PACKAGE: "+Welcome.loc);
+                break;
+            case "mountain":
+                tot1.setText("MOUNTAIN PACKAGE: "+Welcome.loc);
+                break;
+
+            default:
+                break;
+        }
     }
 
     /**
@@ -73,8 +92,8 @@ public class ConfirmedTour extends javax.swing.JFrame {
         kGradientPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 450, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Bodoni MT", 1, 48)); // NOI18N
-        jLabel9.setText("SELECT VEHICLE");
-        kGradientPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 10, -1, 70));
+        jLabel9.setText("CONFIRMED TOUR");
+        kGradientPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 10, -1, 70));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ResortAdministration/Images/car.jpg"))); // NOI18N
         kGradientPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, 300, -1));
@@ -109,23 +128,23 @@ public class ConfirmedTour extends javax.swing.JFrame {
         kGradientPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 100, -1, 30));
 
         yat.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
-        kGradientPanel1.add(yat, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 640, 135, 52));
+        kGradientPanel1.add(yat, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 640, 135, 52));
 
         speed.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
-        kGradientPanel1.add(speed, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 640, 135, 52));
+        kGradientPanel1.add(speed, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 640, 220, 52));
 
         c.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
-        kGradientPanel1.add(c, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 330, 135, 52));
+        kGradientPanel1.add(c, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 330, 135, 52));
 
         b.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
-        kGradientPanel1.add(b, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 340, 135, 52));
+        kGradientPanel1.add(b, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 330, 135, 52));
 
         su.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
-        kGradientPanel1.add(su, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 340, 135, 52));
+        kGradientPanel1.add(su, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 340, 135, 52));
 
         tot.setFont(new java.awt.Font("Bodoni MT", 1, 30)); // NOI18N
         tot.setText("BUS");
-        kGradientPanel1.add(tot, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 560, 210, 60));
+        kGradientPanel1.add(tot, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 560, 210, 60));
 
         jLabel28.setFont(new java.awt.Font("Bodoni MT", 1, 30)); // NOI18N
         jLabel28.setText("BUS");
@@ -156,7 +175,7 @@ public class ConfirmedTour extends javax.swing.JFrame {
 
         tot1.setFont(new java.awt.Font("Bodoni MT", 1, 30)); // NOI18N
         tot1.setText("BUS");
-        kGradientPanel1.add(tot1, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 440, 210, 60));
+        kGradientPanel1.add(tot1, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 440, 360, 60));
 
         getContentPane().add(kGradientPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 730));
 

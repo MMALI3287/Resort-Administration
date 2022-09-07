@@ -37,8 +37,6 @@ public class AdminLogin extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         kButton2 = new com.k33ptoo.components.KButton();
         kButton3 = new com.k33ptoo.components.KButton();
-        kButton4 = new com.k33ptoo.components.KButton();
-        jLabel10 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -53,7 +51,7 @@ public class AdminLogin extends javax.swing.JFrame {
                 passwordActionPerformed(evt);
             }
         });
-        jPanel1.add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 210, 380, 40));
+        jPanel1.add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 210, 380, 40));
 
         username.setFont(new java.awt.Font("Bodoni MT", 0, 30)); // NOI18N
         username.addActionListener(new java.awt.event.ActionListener() {
@@ -61,22 +59,22 @@ public class AdminLogin extends javax.swing.JFrame {
                 usernameActionPerformed(evt);
             }
         });
-        jPanel1.add(username, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 150, 380, 40));
+        jPanel1.add(username, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 150, 380, 40));
 
         jLabel7.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("USERNAME  :");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 140, 180, 60));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 140, 180, 60));
 
         jLabel8.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("PASSWORD  :");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 210, 180, 40));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 210, 180, 40));
 
         jLabel9.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("ADMIN LOGIN");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 30, -1, 70));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 30, -1, 70));
 
         kButton2.setText("BACK");
         kButton2.setFont(new java.awt.Font("Consolas", 1, 18)); // NOI18N
@@ -114,31 +112,7 @@ public class AdminLogin extends javax.swing.JFrame {
                 kButton3ActionPerformed(evt);
             }
         });
-        jPanel1.add(kButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 270, 140, 50));
-
-        kButton4.setText("REGISTER NOW");
-        kButton4.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
-        kButton4.setkBackGroundColor(new java.awt.Color(42, 45, 53));
-        kButton4.setkBorderRadius(20);
-        kButton4.setkEndColor(new java.awt.Color(89, 255, 120));
-        kButton4.setkForeGround(new java.awt.Color(51, 51, 0));
-        kButton4.setkHoverColor(new java.awt.Color(255, 255, 102));
-        kButton4.setkHoverEndColor(new java.awt.Color(255, 241, 192));
-        kButton4.setkHoverForeGround(new java.awt.Color(0, 102, 51));
-        kButton4.setkHoverStartColor(new java.awt.Color(255, 255, 102));
-        kButton4.setkPressedColor(new java.awt.Color(0, 204, 204));
-        kButton4.setkStartColor(new java.awt.Color(240, 241, 192));
-        kButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kButton4ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(kButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 370, 150, 30));
-
-        jLabel10.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText("DON NOT HAVE AN ACCOUNT?");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 370, -1, 40));
+        jPanel1.add(kButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 280, 140, 50));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1280, 730));
 
@@ -167,11 +141,9 @@ public class AdminLogin extends javax.swing.JFrame {
         // TODO add your handling code here:
         String user = username.getText();
         String pass = password.getText();
-        if (Welcome.jdbc.loginCustomer(user, pass)) {
-            Welcome.user = username.getText();
-            Welcome.pass = password.getText();
-            CustomerID customerID = new CustomerID();
-            customerID.show();
+        if (user.equals("root")&&pass.equals("root")) {
+            AdminHome adminHome=new AdminHome();
+            adminHome.show();                    
             dispose();
         } else {
             JOptionPane.showMessageDialog(this, "Username and Password did not match");
@@ -180,13 +152,6 @@ public class AdminLogin extends javax.swing.JFrame {
             return;
         }
     }//GEN-LAST:event_kButton3ActionPerformed
-
-    private void kButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton4ActionPerformed
-        // TODO add your handling code here:
-        CustomerRegistration customerRegistration = new CustomerRegistration();
-        customerRegistration.show();
-        dispose();
-    }//GEN-LAST:event_kButton4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -226,14 +191,12 @@ public class AdminLogin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private com.k33ptoo.components.KButton kButton2;
     private com.k33ptoo.components.KButton kButton3;
-    private com.k33ptoo.components.KButton kButton4;
     private javax.swing.JPasswordField password;
     private javax.swing.JTextField username;
     // End of variables declaration//GEN-END:variables
