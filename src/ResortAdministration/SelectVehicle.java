@@ -31,8 +31,8 @@ public class SelectVehicle extends javax.swing.JFrame {
         b.setText("" + bus);
         speed.setText("" + sb);
         yat.setText("" + yt);
-        if(price<0){
-            price=0;
+        if (price < 0) {
+            price = 0;
         }
         tot.setText(price + " BDT");
     }
@@ -44,7 +44,8 @@ public class SelectVehicle extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated
+    // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         componentMoverUtil1 = new com.k33ptoo.utils.ComponentMoverUtil();
@@ -84,12 +85,14 @@ public class SelectVehicle extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        kGradientPanel1.setkEndColor(new java.awt.Color(255, 204, 204));
+        kGradientPanel1.setkStartColor(new java.awt.Color(255, 255, 102));
         kGradientPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ResortAdministration/Images/yatch.jpg"))); // NOI18N
         kGradientPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 450, -1, -1));
 
-        jLabel9.setFont(new java.awt.Font("Bodoni MT", 1, 48)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Comic Sans MS", 1, 48)); // NOI18N
         jLabel9.setText("SELECT VEHICLE");
         kGradientPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 10, -1, 70));
 
@@ -121,7 +124,8 @@ public class SelectVehicle extends javax.swing.JFrame {
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ResortAdministration/Images/suv.jpg"))); // NOI18N
         kGradientPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 150, -1, -1));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ResortAdministration/Images/speedboat.jpg"))); // NOI18N
+        jLabel5.setIcon(
+                new javax.swing.ImageIcon(getClass().getResource("/ResortAdministration/Images/speedboat.jpg"))); // NOI18N
         kGradientPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 450, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Bodoni MT", 1, 30)); // NOI18N
@@ -271,99 +275,99 @@ public class SelectVehicle extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void cuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cuMouseClicked
+    private void cuMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_cuMouseClicked
         // TODO add your handling code here:
         car++;
-        price+=15000;
+        price += 15000;
         showTaka();
-    }//GEN-LAST:event_cuMouseClicked
+    }// GEN-LAST:event_cuMouseClicked
 
-    private void suuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_suuMouseClicked
+    private void suuMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_suuMouseClicked
         // TODO add your handling code here:
         suv++;
-        price+=20000;
+        price += 20000;
         showTaka();
-    }//GEN-LAST:event_suuMouseClicked
+    }// GEN-LAST:event_suuMouseClicked
 
-    private void buMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buMouseClicked
+    private void buMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_buMouseClicked
         // TODO add your handling code here:
         bus++;
-        price+=40000;
+        price += 40000;
         showTaka();
-    }//GEN-LAST:event_buMouseClicked
+    }// GEN-LAST:event_buMouseClicked
 
-    private void spuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_spuMouseClicked
+    private void spuMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_spuMouseClicked
         // TODO add your handling code here:
         sb++;
-        price+=20000;
+        price += 20000;
         showTaka();
-    }//GEN-LAST:event_spuMouseClicked
+    }// GEN-LAST:event_spuMouseClicked
 
-    private void yuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yuMouseClicked
+    private void yuMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_yuMouseClicked
         // TODO add your handling code here:
         yt++;
-        price+=96000;
+        price += 96000;
         showTaka();
-    }//GEN-LAST:event_yuMouseClicked
+    }// GEN-LAST:event_yuMouseClicked
 
-    private void cdMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cdMouseClicked
+    private void cdMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_cdMouseClicked
         // TODO add your handling code here:
-        price-=15000;
+        price -= 15000;
         if (car > 0) {
             car--;
         }
         showTaka();
-    }//GEN-LAST:event_cdMouseClicked
+    }// GEN-LAST:event_cdMouseClicked
 
-    private void sudMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_sudMouseClicked
+    private void sudMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_sudMouseClicked
         // TODO add your handling code here:
-        price-=20000;
+        price -= 20000;
         if (suv > 0) {
             suv--;
         }
         showTaka();
-    }//GEN-LAST:event_sudMouseClicked
+    }// GEN-LAST:event_sudMouseClicked
 
-    private void bdMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bdMouseClicked
+    private void bdMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_bdMouseClicked
         // TODO add your handling code here:
-        price-=40000;
+        price -= 40000;
         if (bus > 0) {
             bus--;
         }
         showTaka();
-    }//GEN-LAST:event_bdMouseClicked
+    }// GEN-LAST:event_bdMouseClicked
 
-    private void spdMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_spdMouseClicked
+    private void spdMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_spdMouseClicked
         // TODO add your handling code here:
-        price-=20000;
+        price -= 20000;
         if (sb > 0) {
             sb--;
         }
         showTaka();
-    }//GEN-LAST:event_spdMouseClicked
+    }// GEN-LAST:event_spdMouseClicked
 
-    private void ydMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ydMouseClicked
+    private void ydMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_ydMouseClicked
         // TODO add your handling code here:
-        price-=96000;
+        price -= 96000;
         if (yt > 0) {
             yt--;
         }
         showTaka();
-    }//GEN-LAST:event_ydMouseClicked
+    }// GEN-LAST:event_ydMouseClicked
 
     private void kButton2ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_kButton2ActionPerformed
         // TODO add your handling code here:
         Welcome.jdbc.tour();
-        Home home=new Home();
+        Home home = new Home();
         home.show();
         dispose();
     }// GEN-LAST:event_kButton2ActionPerformed
 
     private void kButton3ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_kButton3ActionPerformed
         // TODO add your handling code here:
-        Welcome.loc="";
-        Welcome.des="";
-        BookTour bookTour=new BookTour();
+        Welcome.loc = "";
+        Welcome.des = "";
+        BookTour bookTour = new BookTour();
         bookTour.show();
         dispose();
     }// GEN-LAST:event_kButton3ActionPerformed

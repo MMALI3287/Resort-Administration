@@ -28,19 +28,19 @@ public class ConfirmedTour extends javax.swing.JFrame {
         tot.setText(SelectVehicle.price + " BDT");
         switch (Welcome.des) {
             case "forest":
-                tot1.setText("FOREST PACKAGE: "+Welcome.loc);
+                tot1.setText("FOREST PACKAGE: " + Welcome.loc);
                 break;
             case "beach":
-                tot1.setText("BEACH PACKAGE: "+Welcome.loc);
+                tot1.setText("BEACH PACKAGE: " + Welcome.loc);
                 break;
             case "town":
-                tot1.setText("TOWN PACKAGE: "+Welcome.loc);
+                tot1.setText("TOWN PACKAGE: " + Welcome.loc);
                 break;
             case "island":
-                tot1.setText("ISLAND PACKAGE: "+Welcome.loc);
+                tot1.setText("ISLAND PACKAGE: " + Welcome.loc);
                 break;
             case "mountain":
-                tot1.setText("MOUNTAIN PACKAGE: "+Welcome.loc);
+                tot1.setText("MOUNTAIN PACKAGE: " + Welcome.loc);
                 break;
 
             default:
@@ -55,7 +55,8 @@ public class ConfirmedTour extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated
+    // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         componentMoverUtil1 = new com.k33ptoo.utils.ComponentMoverUtil();
@@ -86,12 +87,14 @@ public class ConfirmedTour extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        kGradientPanel1.setkEndColor(new java.awt.Color(201, 233, 232));
+        kGradientPanel1.setkStartColor(new java.awt.Color(253, 221, 121));
         kGradientPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ResortAdministration/Images/yatch.jpg"))); // NOI18N
         kGradientPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 450, -1, -1));
 
-        jLabel9.setFont(new java.awt.Font("Bodoni MT", 1, 48)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Comic Sans MS", 1, 48)); // NOI18N
         jLabel9.setText("CONFIRMED TOUR");
         kGradientPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 10, -1, 70));
 
@@ -104,7 +107,8 @@ public class ConfirmedTour extends javax.swing.JFrame {
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ResortAdministration/Images/suv.jpg"))); // NOI18N
         kGradientPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 150, -1, -1));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ResortAdministration/Images/speedboat.jpg"))); // NOI18N
+        jLabel5.setIcon(
+                new javax.swing.ImageIcon(getClass().getResource("/ResortAdministration/Images/speedboat.jpg"))); // NOI18N
         kGradientPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 450, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Bodoni MT", 1, 30)); // NOI18N
@@ -182,11 +186,9 @@ public class ConfirmedTour extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    
-
     private void kButton3ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_kButton3ActionPerformed
         // TODO add your handling code here:
-        Home home=new Home();
+        Home home = new Home();
         home.show();
         dispose();
     }// GEN-LAST:event_kButton3ActionPerformed

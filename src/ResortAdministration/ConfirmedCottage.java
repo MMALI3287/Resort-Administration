@@ -70,7 +70,8 @@ public class ConfirmedCottage extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
     // <editor-fold defaultstate="collapsed" desc="Generated
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated
+    // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         kGradientPanel1 = new keeptoo.KGradientPanel();
@@ -87,9 +88,9 @@ public class ConfirmedCottage extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        kGradientPanel1.setkEndColor(new java.awt.Color(51, 51, 255));
+        kGradientPanel1.setkEndColor(new java.awt.Color(201, 233, 232));
         kGradientPanel1.setkGradientFocus(600);
-        kGradientPanel1.setkStartColor(new java.awt.Color(255, 102, 255));
+        kGradientPanel1.setkStartColor(new java.awt.Color(253, 221, 121));
         kGradientPanel1.setMinimumSize(new java.awt.Dimension(1280, 730));
         kGradientPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -128,9 +129,9 @@ public class ConfirmedCottage extends javax.swing.JFrame {
         jLabel20.setText("PACKAGE NAME    :");
         kGradientPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 360, 50));
 
-        jLabel19.setFont(new java.awt.Font("Bodoni MT", 1, 69)); // NOI18N
+        jLabel19.setFont(new java.awt.Font("Comic Sans MS", 1, 69)); // NOI18N
         jLabel19.setText("CONFIRMED COTTAGE");
-        kGradientPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 30, 720, 100));
+        kGradientPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 20, 810, 100));
 
         jLabel10.setFont(new java.awt.Font("Bodoni MT", 1, 36)); // NOI18N
         jLabel10.setText("TWIN BEDS");
@@ -151,20 +152,20 @@ public class ConfirmedCottage extends javax.swing.JFrame {
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(kGradientPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(kGradientPanel1, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(kGradientPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(kGradientPanel1, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void kButton2ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_kButton2ActionPerformed
         // TODO add your handling code here:
-        Home home=new Home();
+        Home home = new Home();
         home.show();
         dispose();
     }// GEN-LAST:event_kButton2ActionPerformed
@@ -190,16 +191,20 @@ public class ConfirmedCottage extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ConfirmedCottage.class.getName()).log(java.util.logging.Level.SEVERE, null,
+            java.util.logging.Logger.getLogger(ConfirmedCottage.class.getName()).log(java.util.logging.Level.SEVERE,
+                    null,
                     ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ConfirmedCottage.class.getName()).log(java.util.logging.Level.SEVERE, null,
+            java.util.logging.Logger.getLogger(ConfirmedCottage.class.getName()).log(java.util.logging.Level.SEVERE,
+                    null,
                     ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ConfirmedCottage.class.getName()).log(java.util.logging.Level.SEVERE, null,
+            java.util.logging.Logger.getLogger(ConfirmedCottage.class.getName()).log(java.util.logging.Level.SEVERE,
+                    null,
                     ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ConfirmedCottage.class.getName()).log(java.util.logging.Level.SEVERE, null,
+            java.util.logging.Logger.getLogger(ConfirmedCottage.class.getName()).log(java.util.logging.Level.SEVERE,
+                    null,
                     ex);
         }
         // </editor-fold>

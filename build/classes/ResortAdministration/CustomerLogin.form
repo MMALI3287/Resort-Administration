@@ -23,18 +23,18 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-              <Component id="kGradientPanel1" min="-2" pref="1280" max="-2" attributes="0"/>
-          </Group>
+        <Group type="102" alignment="1" attributes="0">
+          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          <Component id="kGradientPanel1" min="-2" pref="1280" max="-2" attributes="0"/>
+        </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-              <Component id="kGradientPanel1" min="-2" pref="730" max="-2" attributes="0"/>
-          </Group>
+        <Group type="102" alignment="1" attributes="0">
+          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          <Component id="kGradientPanel1" min="-2" pref="730" max="-2" attributes="0"/>
+        </Group>
       </Group>
     </DimensionLayout>
   </Layout>
@@ -42,11 +42,11 @@
     <Container class="keeptoo.KGradientPanel" name="kGradientPanel1">
       <Properties>
         <Property name="kEndColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="33" red="33" type="rgb"/>
+          <Color blue="b7" green="e3" red="5a" type="rgb"/>
         </Property>
         <Property name="kGradientFocus" type="int" value="600"/>
         <Property name="kStartColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="ff" green="66" red="ff" type="rgb"/>
+          <Color blue="ae" green="c7" red="dc" type="rgb"/>
         </Property>
       </Properties>
 
@@ -215,7 +215,7 @@
         <Component class="javax.swing.JLabel" name="jLabel9">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Bodoni MT" size="75" style="1"/>
+              <Font name="Comic Sans MS" size="75" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" value="CUSTOMER LOGIN"/>
           </Properties>

@@ -30,7 +30,8 @@ public class Login extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
     // <editor-fold defaultstate="collapsed" desc="Generated
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated
+    // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jLabel3 = new javax.swing.JLabel();
@@ -50,12 +51,12 @@ public class Login extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        kGradientPanel1.setkEndColor(new java.awt.Color(51, 51, 255));
+        kGradientPanel1.setkEndColor(new java.awt.Color(160, 218, 219));
         kGradientPanel1.setkGradientFocus(600);
-        kGradientPanel1.setkStartColor(new java.awt.Color(255, 102, 255));
+        kGradientPanel1.setkStartColor(new java.awt.Color(255, 255, 51));
         kGradientPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel7.setFont(new java.awt.Font("Bodoni MT", 1, 75)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Comic Sans MS", 1, 75)); // NOI18N
         jLabel7.setText("LOGIN");
         kGradientPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 20, -1, 113));
 
@@ -127,28 +128,27 @@ public class Login extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(1296, 769));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void kButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton2ActionPerformed
+    private void kButton2ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_kButton2ActionPerformed
         // TODO add your handling code here:
         Welcome welcome = new Welcome();
         welcome.show();
         dispose();
-    }//GEN-LAST:event_kButton2ActionPerformed
+    }// GEN-LAST:event_kButton2ActionPerformed
 
-    private void kButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton3ActionPerformed
+    private void kButton3ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_kButton3ActionPerformed
         // TODO add your handling code here:
         AdminLogin adminLogin = new AdminLogin();
         adminLogin.show();
         dispose();
-    }//GEN-LAST:event_kButton3ActionPerformed
+    }// GEN-LAST:event_kButton3ActionPerformed
 
-    private void kButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kButton4ActionPerformed
+    private void kButton4ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_kButton4ActionPerformed
         // TODO add your handling code here:
         CustomerLogin customerLogin = new CustomerLogin();
         customerLogin.show();
         dispose();
-        
-    }//GEN-LAST:event_kButton4ActionPerformed
 
+    }// GEN-LAST:event_kButton4ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
@@ -156,7 +156,6 @@ public class Login extends javax.swing.JFrame {
         welcome.show();
         dispose();
     }// GEN-LAST:event_jButton3ActionPerformed
-
 
     /**
      * @param args the command line arguments

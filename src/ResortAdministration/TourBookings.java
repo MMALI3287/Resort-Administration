@@ -9,6 +9,7 @@ import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
@@ -47,7 +48,7 @@ public class TourBookings extends javax.swing.JFrame {
                 int price = Welcome.jdbc.resultSet.getInt("price");
                 Timestamp time = Welcome.jdbc.resultSet.getTimestamp("time");
                 model.addRow(
-                        new Object[] { username,  destination,location, car, suv, bus, speedboat, yacht, price, time });
+                        new Object[] { username, destination, location, car, suv, bus, speedboat, yacht, price, time });
             }
             jTable1.setModel(model);
         } catch (SQLException ex) {
@@ -62,7 +63,8 @@ public class TourBookings extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated
+    // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         kGradientPanel1 = new keeptoo.KGradientPanel();
@@ -76,9 +78,9 @@ public class TourBookings extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        kGradientPanel1.setkEndColor(new java.awt.Color(51, 51, 255));
+        kGradientPanel1.setkEndColor(new java.awt.Color(255, 153, 153));
         kGradientPanel1.setkGradientFocus(600);
-        kGradientPanel1.setkStartColor(new java.awt.Color(255, 102, 255));
+        kGradientPanel1.setkStartColor(new java.awt.Color(255, 255, 102));
         kGradientPanel1.setMinimumSize(new java.awt.Dimension(1280, 730));
         kGradientPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -120,7 +122,7 @@ public class TourBookings extends javax.swing.JFrame {
         });
         kGradientPanel1.add(kButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 640, 310, 50));
 
-        jLabel9.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Comic Sans MS", 1, 48)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("TOUR BOOKINGS");
         kGradientPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 30, -1, 70));
@@ -152,22 +154,23 @@ public class TourBookings extends javax.swing.JFrame {
         kGradientPanel1.add(kButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 640, 310, 50));
 
         jTable1.setAutoCreateRowSorter(true);
-        jTable1.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED, new java.awt.Color(255, 153, 255), new java.awt.Color(255, 204, 204)));
+        jTable1.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED,
+                new java.awt.Color(255, 153, 255), new java.awt.Color(255, 204, 204)));
         jTable1.setFont(new java.awt.Font("Calibri", 0, 18)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
+                new Object[][] {
 
-            },
-            new String [] {
-                "USERNAME", "DESTINATION", "LOCATION", "CAR RESERVED", "SUV RESERVED", "BUS RESERVED", "SPEED BOAT RESERVED", "YATCH RESERVED", "TOTAL COST", "TIME RESERVED"
-            }
-        ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false, false, false, true
+                },
+                new String[] {
+                        "USERNAME", "DESTINATION", "LOCATION", "CAR RESERVED", "SUV RESERVED", "BUS RESERVED",
+                        "SPEED BOAT RESERVED", "YATCH RESERVED", "TOTAL COST", "TIME RESERVED"
+                }) {
+            boolean[] canEdit = new boolean[] {
+                    false, false, false, false, false, false, false, false, false, true
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
-                return canEdit [columnIndex];
+                return canEdit[columnIndex];
             }
         });
         jScrollPane1.setViewportView(jTable1);
@@ -177,16 +180,16 @@ public class TourBookings extends javax.swing.JFrame {
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addComponent(kGradientPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1280, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                                .addGap(0, 0, 0)
+                                .addComponent(kGradientPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1280,
+                                        javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE)));
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(kGradientPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(kGradientPanel1, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -200,6 +203,22 @@ public class TourBookings extends javax.swing.JFrame {
 
     private void kButton8ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_kButton8ActionPerformed
         // TODO add your handling code here:
+        try {
+            Welcome.jdbc.preparedStatement = Welcome.jdbc.connection.prepareStatement(
+                    "DELETE FROM money WHERE username=?;");
+            Welcome.jdbc.preparedStatement.setString(1, jTextField1.getText());
+            Welcome.jdbc.rowsAffected = Welcome.jdbc.preparedStatement.executeUpdate();
+            if (Welcome.jdbc.rowsAffected > 0) {
+                JOptionPane.showMessageDialog(this, Welcome.jdbc.rowsAffected + " rows have been deleted");
+            } else {
+                JOptionPane.showMessageDialog(this, "No rows have been deleted");
+            }
+            AdminHome adminHome = new AdminHome();
+            adminHome.show();
+            dispose();
+        } catch (SQLException ex) {
+            Logger.getLogger(MoneyWithdraws.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }// GEN-LAST:event_kButton8ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jTextField1ActionPerformed
@@ -208,8 +227,8 @@ public class TourBookings extends javax.swing.JFrame {
 
     private void kButton9ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_kButton9ActionPerformed
         // TODO add your handling code here:
-        model=(DefaultTableModel) jTable1.getModel();
-        TableRowSorter<DefaultTableModel> trs= new TableRowSorter<>(model);
+        model = (DefaultTableModel) jTable1.getModel();
+        TableRowSorter<DefaultTableModel> trs = new TableRowSorter<>(model);
         jTable1.setRowSorter(trs);
         trs.setRowFilter(RowFilter.regexFilter(jTextField1.getText()));
     }// GEN-LAST:event_kButton9ActionPerformed

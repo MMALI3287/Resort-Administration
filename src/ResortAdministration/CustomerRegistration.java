@@ -43,7 +43,8 @@ public class CustomerRegistration extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
     // <editor-fold defaultstate="collapsed" desc="Generated
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated
+    // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
@@ -99,12 +100,12 @@ public class CustomerRegistration extends javax.swing.JFrame {
                 jButton11ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1330, 80, 80, 50));
+        getContentPane().add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 90, 80, 50));
 
         jLabel2.setBackground(new java.awt.Color(222, 222, 11));
         jLabel2.setForeground(new java.awt.Color(222, 222, 11));
         jLabel2.setOpaque(true);
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 0, 54, 800));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(55, 0, 54, 730));
 
         jLabel5.setBackground(new java.awt.Color(222, 222, 11));
         jLabel5.setOpaque(true);
@@ -116,11 +117,11 @@ public class CustomerRegistration extends javax.swing.JFrame {
 
         jLabel8.setFont(new java.awt.Font("Bodoni MT", 1, 52)); // NOI18N
         jLabel8.setText("CUSTOMER REGISTRATION");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 90, -1, 49));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 90, -1, 49));
 
         jLabel12.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
         jLabel12.setText("LAST NAME      :");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 170, -1, -1));
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 160, -1, -1));
 
         jLabel13.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
         jLabel13.setText("ADDRESS          :");
@@ -128,11 +129,11 @@ public class CustomerRegistration extends javax.swing.JFrame {
 
         jLabel14.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
         jLabel14.setText("NATIONALITY  :");
-        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 220, -1, -1));
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 210, -1, -1));
 
         jLabel15.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
         jLabel15.setText("PASSPORT No.  :");
-        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 270, -1, -1));
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 260, -1, -1));
 
         jLabel16.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
         jLabel16.setText("MOBILE No.      :");
@@ -140,11 +141,11 @@ public class CustomerRegistration extends javax.swing.JFrame {
 
         jLabel17.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
         jLabel17.setText("PHONE No.        :");
-        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 320, -1, -1));
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 310, -1, -1));
 
         jLabel19.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
         jLabel19.setText("CARD PIN          :");
-        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 420, -1, -1));
+        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 410, -1, -1));
 
         jLabel20.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
         jLabel20.setText("E-MAIL              :");
@@ -163,10 +164,11 @@ public class CustomerRegistration extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 540, 230, 60));
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 510, 230, 60));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ResortAdministration/Images/187803-200.png"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 460, 220, 220));
+        jLabel3.setIcon(
+                new javax.swing.ImageIcon(getClass().getResource("/ResortAdministration/Images/187803-200.png"))); // NOI18N
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 410, 220, 220));
 
         jLabel22.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
         jLabel22.setText("CREDIT CARD  :");
@@ -187,7 +189,7 @@ public class CustomerRegistration extends javax.swing.JFrame {
 
         jLabel23.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
         jLabel23.setText("PASSWORD       :");
-        getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 370, -1, -1));
+        getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 360, -1, -1));
 
         jLabel24.setFont(new java.awt.Font("Bodoni MT", 1, 24)); // NOI18N
         jLabel24.setText("USERNAME      :");
@@ -202,7 +204,7 @@ public class CustomerRegistration extends javax.swing.JFrame {
                 jButton3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 690, 290, 80));
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 630, 290, 80));
 
         creditcard.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
         creditcard.addActionListener(new java.awt.event.ActionListener() {
@@ -210,7 +212,7 @@ public class CustomerRegistration extends javax.swing.JFrame {
                 creditcardActionPerformed(evt);
             }
         });
-        getContentPane().add(creditcard, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 410, 360, 40));
+        getContentPane().add(creditcard, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 410, 290, 40));
 
         firstname.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
         firstname.addActionListener(new java.awt.event.ActionListener() {
@@ -218,7 +220,7 @@ public class CustomerRegistration extends javax.swing.JFrame {
                 firstnameActionPerformed(evt);
             }
         });
-        getContentPane().add(firstname, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, 360, 40));
+        getContentPane().add(firstname, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 160, 290, 40));
 
         address.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
         address.addActionListener(new java.awt.event.ActionListener() {
@@ -226,7 +228,7 @@ public class CustomerRegistration extends javax.swing.JFrame {
                 addressActionPerformed(evt);
             }
         });
-        getContentPane().add(address, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 210, 360, 40));
+        getContentPane().add(address, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 210, 290, 40));
 
         email.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
         email.addActionListener(new java.awt.event.ActionListener() {
@@ -234,7 +236,7 @@ public class CustomerRegistration extends javax.swing.JFrame {
                 emailActionPerformed(evt);
             }
         });
-        getContentPane().add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 260, 360, 40));
+        getContentPane().add(email, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 260, 290, 40));
 
         mobile.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
         mobile.addActionListener(new java.awt.event.ActionListener() {
@@ -242,7 +244,7 @@ public class CustomerRegistration extends javax.swing.JFrame {
                 mobileActionPerformed(evt);
             }
         });
-        getContentPane().add(mobile, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 310, 360, 40));
+        getContentPane().add(mobile, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 310, 290, 40));
 
         username.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
         username.addActionListener(new java.awt.event.ActionListener() {
@@ -250,7 +252,7 @@ public class CustomerRegistration extends javax.swing.JFrame {
                 usernameActionPerformed(evt);
             }
         });
-        getContentPane().add(username, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 360, 360, 40));
+        getContentPane().add(username, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 360, 290, 40));
 
         cardpin.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
         cardpin.addActionListener(new java.awt.event.ActionListener() {
@@ -258,7 +260,7 @@ public class CustomerRegistration extends javax.swing.JFrame {
                 cardpinActionPerformed(evt);
             }
         });
-        getContentPane().add(cardpin, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 410, 360, 40));
+        getContentPane().add(cardpin, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 400, 290, 40));
 
         lastname.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
         lastname.addActionListener(new java.awt.event.ActionListener() {
@@ -266,7 +268,7 @@ public class CustomerRegistration extends javax.swing.JFrame {
                 lastnameActionPerformed(evt);
             }
         });
-        getContentPane().add(lastname, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 160, 360, 40));
+        getContentPane().add(lastname, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 150, 290, 40));
 
         nationality.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
         nationality.addActionListener(new java.awt.event.ActionListener() {
@@ -274,7 +276,7 @@ public class CustomerRegistration extends javax.swing.JFrame {
                 nationalityActionPerformed(evt);
             }
         });
-        getContentPane().add(nationality, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 210, 360, 40));
+        getContentPane().add(nationality, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 200, 290, 40));
 
         passport.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
         passport.addActionListener(new java.awt.event.ActionListener() {
@@ -282,7 +284,7 @@ public class CustomerRegistration extends javax.swing.JFrame {
                 passportActionPerformed(evt);
             }
         });
-        getContentPane().add(passport, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 260, 360, 40));
+        getContentPane().add(passport, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 250, 290, 40));
 
         phone.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
         phone.addActionListener(new java.awt.event.ActionListener() {
@@ -290,7 +292,7 @@ public class CustomerRegistration extends javax.swing.JFrame {
                 phoneActionPerformed(evt);
             }
         });
-        getContentPane().add(phone, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 310, 360, 40));
+        getContentPane().add(phone, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 300, 290, 40));
 
         password.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
         password.addActionListener(new java.awt.event.ActionListener() {
@@ -298,7 +300,7 @@ public class CustomerRegistration extends javax.swing.JFrame {
                 passwordActionPerformed(evt);
             }
         });
-        getContentPane().add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 360, 360, 40));
+        getContentPane().add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 350, 290, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -307,9 +309,11 @@ public class CustomerRegistration extends javax.swing.JFrame {
         // TODO add your handling code here:
         String gender = "";
 
-        if (firstname.getText().equals("") || lastname.getText().equals("") || address.getText().equals("") || nationality.getText().equals("")
+        if (firstname.getText().equals("") || lastname.getText().equals("") || address.getText().equals("")
+                || nationality.getText().equals("")
                 || email.getText().equals("") || passport.getText().equals("") || mobile.getText().equals("")
-                || phone.getText().equals("") || username.getText().equals("") || password.getText().equals("") || creditcard.getText().equals("")
+                || phone.getText().equals("") || username.getText().equals("") || password.getText().equals("")
+                || creditcard.getText().equals("")
                 || cardpin.getText().equals("") || !(jRadioButton1.isSelected() || jRadioButton2.isSelected())) {
             JOptionPane.showMessageDialog(this, "Please Fill-up all fields");
             return;

@@ -70,6 +70,7 @@ public class ConfirmCottage extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
     // <editor-fold defaultstate="collapsed" desc="Generated
+    // <editor-fold defaultstate="collapsed" desc="Generated
     // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -88,9 +89,9 @@ public class ConfirmCottage extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        kGradientPanel1.setkEndColor(new java.awt.Color(51, 51, 255));
+        kGradientPanel1.setkEndColor(new java.awt.Color(201, 233, 232));
         kGradientPanel1.setkGradientFocus(600);
-        kGradientPanel1.setkStartColor(new java.awt.Color(255, 102, 255));
+        kGradientPanel1.setkStartColor(new java.awt.Color(253, 221, 121));
         kGradientPanel1.setMinimumSize(new java.awt.Dimension(1280, 730));
         kGradientPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -102,7 +103,7 @@ public class ConfirmCottage extends javax.swing.JFrame {
         kButton2.setkForeGround(new java.awt.Color(51, 51, 0));
         kButton2.setkHoverColor(new java.awt.Color(255, 255, 102));
         kButton2.setkHoverEndColor(new java.awt.Color(255, 241, 192));
-        kButton2.setkHoverForeGround(new java.awt.Color(0, 102, 51));
+        kButton2.setkHoverForeGround(new java.awt.Color(51, 255, 255));
         kButton2.setkHoverStartColor(new java.awt.Color(255, 255, 102));
         kButton2.setkPressedColor(new java.awt.Color(0, 204, 204));
         kButton2.setkStartColor(new java.awt.Color(240, 241, 192));
@@ -121,7 +122,7 @@ public class ConfirmCottage extends javax.swing.JFrame {
         kButton3.setkForeGround(new java.awt.Color(51, 51, 0));
         kButton3.setkHoverColor(new java.awt.Color(255, 255, 102));
         kButton3.setkHoverEndColor(new java.awt.Color(255, 241, 192));
-        kButton3.setkHoverForeGround(new java.awt.Color(0, 102, 51));
+        kButton3.setkHoverForeGround(new java.awt.Color(0, 255, 255));
         kButton3.setkHoverStartColor(new java.awt.Color(255, 255, 102));
         kButton3.setkPressedColor(new java.awt.Color(0, 204, 204));
         kButton3.setkStartColor(new java.awt.Color(240, 241, 192));
@@ -148,9 +149,9 @@ public class ConfirmCottage extends javax.swing.JFrame {
         jLabel20.setText("PACKAGE NAME    :");
         kGradientPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 360, 50));
 
-        jLabel19.setFont(new java.awt.Font("Bodoni MT", 1, 69)); // NOI18N
+        jLabel19.setFont(new java.awt.Font("Comic Sans MS", 1, 69)); // NOI18N
         jLabel19.setText("CONFIRM YOUR COTTAGE");
-        kGradientPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, 830, 100));
+        kGradientPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 20, 950, 100));
 
         jLabel10.setFont(new java.awt.Font("Bodoni MT", 1, 36)); // NOI18N
         jLabel10.setText("TWIN BEDS");
@@ -193,7 +194,7 @@ public class ConfirmCottage extends javax.swing.JFrame {
     private void kButton3ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_kButton3ActionPerformed
         // TODO add your handling code here:
         Welcome.jdbc.bookCottage();
-        Home home=new Home();
+        Home home = new Home();
         home.show();
         dispose();
     }// GEN-LAST:event_kButton3ActionPerformed

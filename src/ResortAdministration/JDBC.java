@@ -18,6 +18,7 @@ public class JDBC {
     private static final String uname = "root";
     private static final String pword = "root";
     private static final String url = "jdbc:mysql://localhost:3306/resort_administration";
+
     String s = "";
     int q;
     int i;
@@ -228,140 +229,138 @@ public class JDBC {
             Logger.getLogger(JDBC.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
-    public void checkOut_cot(){
+
+    public void checkOut_cot() {
         Timestamp sqldate = new Timestamp(System.currentTimeMillis());
-        Timestamp prev=null;
+        Timestamp prev = null;
         try {
             preparedStatement = connection.prepareStatement(
                     "SELECT time FROM book_cot WHERE username=?;");
             preparedStatement.setString(1, Welcome.user);
-            resultSet=preparedStatement.executeQuery();
-            while(resultSet.next()){
-                prev=resultSet.getTimestamp("time");
-                Date t=null;
-            t=new Date(prev.getTime());
-            String pattern="dd MM";
-            SimpleDateFormat sdf=new SimpleDateFormat(pattern);
-            String res=sdf.format(t);
-            System.out.println(res);
-            String ds2=res.substring(0, 2);
-            String ms2=res.substring(3, 5);
-            int di2=Integer.parseInt(ds2);
-            int mi2=Integer.parseInt(ms2);
-            Date t_1=null;
-            t_1=new Date(sqldate.getTime());
-            String pattern_1="dd MM";
-            SimpleDateFormat sdf_1=new SimpleDateFormat(pattern_1);
-            String res_1=sdf_1.format(t_1);
-            String ds1=res_1.substring(0, 2);
-            String ms1=res_1.substring(3, 5);
-            int di1=Integer.parseInt(ds1);
-            int mi1=Integer.parseInt(ms1);
-            if(mi1==mi2){
-                BookCottage.diff=di1-di2;
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                prev = resultSet.getTimestamp("time");
+                Date t = null;
+                t = new Date(prev.getTime());
+                String pattern = "dd MM";
+                SimpleDateFormat sdf = new SimpleDateFormat(pattern);
+                String res = sdf.format(t);
+                System.out.println(res);
+                String ds2 = res.substring(0, 2);
+                String ms2 = res.substring(3, 5);
+                int di2 = Integer.parseInt(ds2);
+                int mi2 = Integer.parseInt(ms2);
+                Date t_1 = null;
+                t_1 = new Date(sqldate.getTime());
+                String pattern_1 = "dd MM";
+                SimpleDateFormat sdf_1 = new SimpleDateFormat(pattern_1);
+                String res_1 = sdf_1.format(t_1);
+                String ds1 = res_1.substring(0, 2);
+                String ms1 = res_1.substring(3, 5);
+                int di1 = Integer.parseInt(ds1);
+                int mi1 = Integer.parseInt(ms1);
+                if (mi1 == mi2) {
+                    BookCottage.diff = di1 - di2;
+                } else if (mi1 < mi2) {
+                    BookCottage.diff = di1 - di2 + 30;
+                }
             }
-            else if(mi1<mi2){
-                BookCottage.diff=di1-di2+30;
-            }
-            }
-            
+
         } catch (SQLException ex) {
             Logger.getLogger(JDBC.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
-    public void checkOut_res(){
+
+    public void checkOut_res() {
         Timestamp sqldate = new Timestamp(System.currentTimeMillis());
-        Timestamp prev=null;
+        Timestamp prev = null;
         try {
             preparedStatement = connection.prepareStatement(
                     "SELECT time FROM book_venue WHERE username=?;");
             preparedStatement.setString(1, Welcome.user);
-            resultSet=preparedStatement.executeQuery();
-            while(resultSet.next()){
-                prev=resultSet.getTimestamp("time");
-                Date t=null;
-            t=new Date(prev.getTime());
-            String pattern="dd MM";
-            SimpleDateFormat sdf=new SimpleDateFormat(pattern);
-            String res=sdf.format(t);
-            System.out.println(res);
-            String ds2=res.substring(0, 2);
-            String ms2=res.substring(3, 5);
-            int di2=Integer.parseInt(ds2);
-            int mi2=Integer.parseInt(ms2);
-            System.out.println(di2);
-            System.out.println(mi2);
-            Date t_1=null;
-            t_1=new Date(sqldate.getTime());
-            String pattern_1="dd MM";
-            SimpleDateFormat sdf_1=new SimpleDateFormat(pattern_1);
-            String res_1=sdf_1.format(t_1);
-            System.out.println(res_1);
-            String ds1=res_1.substring(0, 2);
-            String ms1=res_1.substring(3, 5);
-            int di1=Integer.parseInt(ds1);
-            int mi1=Integer.parseInt(ms1);
-            System.out.println(di1);
-            System.out.println(mi1);
-            if(mi1==mi2){
-                BookVenue.diff=di1-di2;
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                prev = resultSet.getTimestamp("time");
+                Date t = null;
+                t = new Date(prev.getTime());
+                String pattern = "dd MM";
+                SimpleDateFormat sdf = new SimpleDateFormat(pattern);
+                String res = sdf.format(t);
+                System.out.println(res);
+                String ds2 = res.substring(0, 2);
+                String ms2 = res.substring(3, 5);
+                int di2 = Integer.parseInt(ds2);
+                int mi2 = Integer.parseInt(ms2);
+                System.out.println(di2);
+                System.out.println(mi2);
+                Date t_1 = null;
+                t_1 = new Date(sqldate.getTime());
+                String pattern_1 = "dd MM";
+                SimpleDateFormat sdf_1 = new SimpleDateFormat(pattern_1);
+                String res_1 = sdf_1.format(t_1);
+                System.out.println(res_1);
+                String ds1 = res_1.substring(0, 2);
+                String ms1 = res_1.substring(3, 5);
+                int di1 = Integer.parseInt(ds1);
+                int mi1 = Integer.parseInt(ms1);
+                System.out.println(di1);
+                System.out.println(mi1);
+                if (mi1 == mi2) {
+                    BookVenue.diff = di1 - di2;
+                } else if (mi1 < mi2) {
+                    BookVenue.diff = di1 - di2 + 30;
+                }
             }
-            else if(mi1<mi2){
-                BookVenue.diff=di1-di2+30;
-            }
-            }
-            
+
         } catch (SQLException ex) {
             Logger.getLogger(JDBC.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-    
-    public void checkOut(String review,int price){
-        
-            Timestamp sqldate = new Timestamp(System.currentTimeMillis());
-            try {
-                preparedStatement = connection.prepareStatement(
-                        "INSERT INTO checkouts (username,review, spent ,time) VALUES (?,?,?,?);");
-                preparedStatement.setString(1, Welcome.user);
-                preparedStatement.setString(2, review);
-                preparedStatement.setInt(3, price);
-                preparedStatement.setTimestamp(4, sqldate);
-                rowsAffected = preparedStatement.executeUpdate();
-            } catch (SQLException ex) {
-                Logger.getLogger(JDBC.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            try {
+
+    public void checkOut(String review, int price) {
+
+        Timestamp sqldate = new Timestamp(System.currentTimeMillis());
+        try {
+            preparedStatement = connection.prepareStatement(
+                    "INSERT INTO checkouts (username,review, spent ,time) VALUES (?,?,?,?);");
+            preparedStatement.setString(1, Welcome.user);
+            preparedStatement.setString(2, review);
+            preparedStatement.setInt(3, price);
+            preparedStatement.setTimestamp(4, sqldate);
+            rowsAffected = preparedStatement.executeUpdate();
+        } catch (SQLException ex) {
+            Logger.getLogger(JDBC.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        try {
             preparedStatement = connection.prepareStatement(
                     "SELECT username FROM book_cot WHERE username=?;");
             preparedStatement.setString(1, Welcome.user);
-            resultSet=preparedStatement.executeQuery();
-            while(resultSet.next()){
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
                 preparedStatement = connection.prepareStatement(
-                    "DELETE FROM book_cot WHERE username=?;");
-            preparedStatement.setString(1, Welcome.user);
-            rowsAffected=preparedStatement.executeUpdate();
+                        "DELETE FROM book_cot WHERE username=?;");
+                preparedStatement.setString(1, Welcome.user);
+                rowsAffected = preparedStatement.executeUpdate();
             }
             preparedStatement = connection.prepareStatement(
                     "SELECT username FROM book_venue WHERE username=?;");
             preparedStatement.setString(1, Welcome.user);
-            resultSet=preparedStatement.executeQuery();
-            while(resultSet.next()){
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
                 preparedStatement = connection.prepareStatement(
-                    "DELETE FROM book_venue WHERE username=?;");
-            preparedStatement.setString(1, Welcome.user);
-            rowsAffected=preparedStatement.executeUpdate();
+                        "DELETE FROM book_venue WHERE username=?;");
+                preparedStatement.setString(1, Welcome.user);
+                rowsAffected = preparedStatement.executeUpdate();
             }
             preparedStatement = connection.prepareStatement(
                     "SELECT username FROM tour WHERE username=?;");
             preparedStatement.setString(1, Welcome.user);
-            resultSet=preparedStatement.executeQuery();
-            while(resultSet.next()){
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
                 preparedStatement = connection.prepareStatement(
-                    "DELETE FROM tour WHERE username=?;");
-            preparedStatement.setString(1, Welcome.user);
-            rowsAffected=preparedStatement.executeUpdate();
+                        "DELETE FROM tour WHERE username=?;");
+                preparedStatement.setString(1, Welcome.user);
+                rowsAffected = preparedStatement.executeUpdate();
             }
         } catch (SQLException ex) {
             Logger.getLogger(JDBC.class.getName()).log(Level.SEVERE, null, ex);

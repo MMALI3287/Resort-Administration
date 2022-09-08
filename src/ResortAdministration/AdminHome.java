@@ -42,9 +42,9 @@ public class AdminHome extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        kGradientPanel1.setkEndColor(new java.awt.Color(51, 51, 255));
+        kGradientPanel1.setkEndColor(new java.awt.Color(244, 236, 127));
         kGradientPanel1.setkGradientFocus(600);
-        kGradientPanel1.setkStartColor(new java.awt.Color(255, 102, 255));
+        kGradientPanel1.setkStartColor(new java.awt.Color(134, 183, 248));
         kGradientPanel1.setMinimumSize(new java.awt.Dimension(1280, 730));
         kGradientPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 

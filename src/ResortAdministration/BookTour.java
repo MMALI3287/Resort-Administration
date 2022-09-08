@@ -69,6 +69,7 @@ public class BookTour extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
+    // <editor-fold defaultstate="collapsed" desc="Generated
     // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -82,9 +83,9 @@ public class BookTour extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        kGradientPanel1.setkEndColor(new java.awt.Color(255, 255, 153));
+        kGradientPanel1.setkEndColor(new java.awt.Color(149, 233, 218));
         kGradientPanel1.setkGradientFocus(600);
-        kGradientPanel1.setkStartColor(new java.awt.Color(255, 255, 255));
+        kGradientPanel1.setkStartColor(new java.awt.Color(255, 252, 164));
         kGradientPanel1.setMinimumSize(new java.awt.Dimension(1280, 730));
         kGradientPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -126,7 +127,7 @@ public class BookTour extends javax.swing.JFrame {
         });
         kGradientPanel1.add(kButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 620, 290, 90));
 
-        jLabel9.setFont(new java.awt.Font("Bodoni MT", 1, 75)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Comic Sans MS", 1, 75)); // NOI18N
         jLabel9.setText("ISLAND");
         kGradientPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 20, -1, 70));
 

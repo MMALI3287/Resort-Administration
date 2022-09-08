@@ -69,6 +69,7 @@ public class ConfirmVenue extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
+    // <editor-fold defaultstate="collapsed" desc="Generated
     // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -87,9 +88,9 @@ public class ConfirmVenue extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        kGradientPanel1.setkEndColor(new java.awt.Color(51, 51, 255));
+        kGradientPanel1.setkEndColor(new java.awt.Color(201, 233, 232));
         kGradientPanel1.setkGradientFocus(600);
-        kGradientPanel1.setkStartColor(new java.awt.Color(255, 102, 255));
+        kGradientPanel1.setkStartColor(new java.awt.Color(253, 221, 121));
         kGradientPanel1.setMinimumSize(new java.awt.Dimension(1280, 730));
         kGradientPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -147,9 +148,9 @@ public class ConfirmVenue extends javax.swing.JFrame {
         jLabel20.setText("PACKAGE NAME    :");
         kGradientPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 360, 50));
 
-        jLabel19.setFont(new java.awt.Font("Bodoni MT", 1, 69)); // NOI18N
+        jLabel19.setFont(new java.awt.Font("Comic Sans MS", 1, 65)); // NOI18N
         jLabel19.setText("CONFIRM YOUR VENUE");
-        kGradientPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 30, 750, 100));
+        kGradientPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, 830, 100));
 
         jLabel10.setFont(new java.awt.Font("Bodoni MT", 1, 36)); // NOI18N
         jLabel10.setText("TWIN BEDS");
@@ -192,7 +193,7 @@ public class ConfirmVenue extends javax.swing.JFrame {
     private void kButton3ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_kButton3ActionPerformed
         // TODO add your handling code here:
         Welcome.jdbc.bookVenue();
-        Home home=new Home();
+        Home home = new Home();
         home.show();
         dispose();
     }// GEN-LAST:event_kButton3ActionPerformed

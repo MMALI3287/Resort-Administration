@@ -82,7 +82,8 @@ public class Home extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
     // <editor-fold defaultstate="collapsed" desc="Generated
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated
+    // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         kGradientPanel1 = new keeptoo.KGradientPanel();
@@ -95,9 +96,9 @@ public class Home extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        kGradientPanel1.setkEndColor(new java.awt.Color(51, 51, 255));
+        kGradientPanel1.setkEndColor(new java.awt.Color(251, 222, 104));
         kGradientPanel1.setkGradientFocus(600);
-        kGradientPanel1.setkStartColor(new java.awt.Color(255, 102, 255));
+        kGradientPanel1.setkStartColor(new java.awt.Color(69, 94, 62));
         kGradientPanel1.setMinimumSize(new java.awt.Dimension(1280, 730));
         kGradientPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -139,7 +140,7 @@ public class Home extends javax.swing.JFrame {
         });
         kGradientPanel1.add(kButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 640, 220, 70));
 
-        jLabel9.setFont(new java.awt.Font("Bodoni MT", 1, 48)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Comic Sans MS", 1, 48)); // NOI18N
         jLabel9.setText("BOOK A COTTAGE");
         kGradientPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 10, -1, 70));
 
@@ -159,19 +160,20 @@ public class Home extends javax.swing.JFrame {
         });
         kGradientPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 69, 69));
 
-        label1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ResortAdministration/Images/Home/cottage.jpg"))); // NOI18N
+        label1.setIcon(
+                new javax.swing.ImageIcon(getClass().getResource("/ResortAdministration/Images/Home/cottage.jpg"))); // NOI18N
         kGradientPanel1.add(label1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, 889, 500));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(kGradientPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(kGradientPanel1, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(kGradientPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(kGradientPanel1, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -204,6 +206,7 @@ public class Home extends javax.swing.JFrame {
                     bookVenue.show();
                     dispose();
                 } else {
+                    System.out.println(Welcome.res);
                     ConfirmedVenue confirmedVenue = new ConfirmedVenue();
                     confirmedVenue.show();
                     dispose();
@@ -260,7 +263,7 @@ public class Home extends javax.swing.JFrame {
         }
         position = position + 1;
         if (position >= imgs.length) {
-            position =0;
+            position = 0;
         }
         show(position);
     }// GEN-LAST:event_jLabel1MousePressed
