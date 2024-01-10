@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Libraries">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/ResortAdministration/Libraries/KControls-2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/ResortAdministration/Libraries/Beprocode.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/ResortAdministration/Libraries/jaco-mp3-player-0.9.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/ResortAdministration/Libraries/jtransc-rt-core-0.5.0-ALPHA4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/ResortAdministration/Libraries/rs2xml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/ResortAdministration/Libraries/jtransc-rt-0.5.0-ALPHA4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/ResortAdministration/Libraries/KGradientPanel.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
