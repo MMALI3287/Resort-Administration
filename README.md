@@ -91,6 +91,12 @@ A sophisticated Java-based resort management solution that revolutionizes how mo
 - Minimum 4GB RAM
 - Windows/Linux/MacOS
 
+## 👥 Team
+
+- [MD Musaddique Ali Erfan](https://github.com/MMALI3287) - Lead Developer
+- [Tabia Morshed](https://github.com/tprokriti) - Developer
+- [Efti Hossain](https://github.com/efti-dot) - Developer
+
 ## 🔮 Future Scope
 
 - Mobile application
