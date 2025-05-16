@@ -1,7 +1,8 @@
 # Resort Administration System 🏖️
 
-## ⏱️ Development Metrics
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/MMALI3287/Resort-Administration/blob/main/LICENSE)
+[![Java](https://img.shields.io/badge/Java-8%2B-orange)](https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html)
+[![MySQL](https://img.shields.io/badge/MySQL-8.0%2B-blue)](https://www.mysql.com/)
 <a href="https://wakatime.com/badge/github/MMALI3287/Resort-Administration"><img src="https://wakatime.com/badge/github/MMALI3287/Resort-Administration.svg" alt="wakatime"></a>
 
 ## 🌟 Overview
@@ -110,6 +111,10 @@ A sophisticated Java-based resort management solution that revolutionizes how mo
 For any queries regarding the Resort Administration System, please reach out to the development team.
 
 Email: [erfanali3287@gmail.com](erfanali3287@gmail.com)
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
